@@ -1,13 +1,11 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -17,10 +15,7 @@ body {
   min-height: 100vh;
   background-color: #fff;
   font-family: sans-serif;
-  
-  
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -44,13 +39,31 @@ h6{
 p{
   margin: 0;
 }
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
 .container{
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
   padding-left: 20px;
+  position: relative;
+  min-height: 100vh;
+}
+.form{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.inputs{
+  margin-bottom: 10px;
+  height: 40px;
+  padding: 10px;
+  border-color: #e5e5e5;
+}
+.btn{
+  cursor: pointer;
+  width: 70px;
 }
